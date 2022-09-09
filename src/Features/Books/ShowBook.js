@@ -21,7 +21,6 @@ const ShowBook = () => {
             <table className="table-bordered">
                 <thead className="gap-3">
                     <tr >
-                        <th>ID</th>
                         <th>Title</th>
                         <th>Author</th>
                         <th>Action</th>
@@ -32,7 +31,6 @@ const ShowBook = () => {
                         books && books.map((book)=>{
                             const {id,title,author}=book;
                             return (<tr key={id} className ="my-5">
-                                <td className="px-5 my-2">{id}</td>
                                 <td className="px-5 my-2">{title}</td>
                                 <td className="px-5 my-2">{author}</td>
                                 <td className="flex gap-2 px-5 my-2">
